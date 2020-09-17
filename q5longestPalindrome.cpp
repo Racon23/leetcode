@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include<ctime>
+#include <ctime>
 
 using namespace std;
 
@@ -11,14 +11,21 @@ public:
     string longestPalindrome(string s)
     {
         int len = s.length();
-        string str = s.substr(0, 1);
+        string str = s.substr(len / 2, 1);
         string tstr;
         string tstr1;
         string tstr2;
         if (len <= 1)
             return s;
-        for (int i = 0; i < len; i++)
+        int i = len / 2;
+        int k = 1;
+        while (i >= 0 && i < len)
         {
+            i = len / 2 + k;
+            if (i >= len)
+            {
+                continue;
+            }
             for (int j = 1; j < len; j++)
             {
                 if (i - j >= 0 && i + j < len)
@@ -71,6 +78,64 @@ public:
                     }
                 }
             }
+            i = len / 2 - k;
+            if (i < 0)
+            {
+                continue;
+            }
+            for (int j = 1; j < len; j++)
+            {
+                if (i - j >= 0 && i + j < len)
+                {
+                    if (s.at(i - j) == s.at(i + j))
+                    {
+                        tstr = s.substr(i - j, j * 2 + 1);
+                        if (tstr.length() > str.length())
+                        {
+                            str = tstr;
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            if (i < len - 1 && s.at(i) == s.at(i + 1))
+            {
+                tstr = s.substr(i, 2);
+                if (tstr.length() > str.length())
+                {
+                    str = tstr;
+                }
+                for (int j = 1; j < len; j++)
+                {
+                    if (i - j >= 0 && i + j + 1 < len)
+                    {
+                        if (s.at(i - j) == s.at(i + j + 1))
+                        {
+                            tstr = s.substr(i - j, j * 2 + 2);
+                            if (tstr.length() > str.length())
+                            {
+                                str = tstr;
+                            }
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            k++;
         }
         return str;
     }
