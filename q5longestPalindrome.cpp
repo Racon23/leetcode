@@ -27,6 +27,7 @@ public:
         {
             ia = len / 2;
         }
+        i = ia;
         str = s.substr(ia, 1);
         int k = 0;
         int flag = 0;
