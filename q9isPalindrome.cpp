@@ -6,10 +6,22 @@
 
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool isPalindrome(int x) {
-        
+    bool isPalindrome(int x)
+    {
+        int x1 = 0;
+        int temp = 0;
+        if((x<0||x%10==0)&&x!=0){
+            return 0;
+        }
+        while (x1 < x)
+        {
+            x1 = x1 * 10 + x % 10;
+            x /= 10;
+        }
+        return x1 == x || x == x1 / 10;
     }
 };
 
@@ -17,10 +29,11 @@ int main()
 {
     Solution s;
 
-    int x = 121;
+    // int x = -1110;
+    int x =0;
 
     clock_t time_start = clock();
-    s.isPalindrome(x);
+    cout << s.isPalindrome(x);
 
     cout << endl;
     clock_t time_end = clock();
