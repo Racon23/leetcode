@@ -40,17 +40,41 @@ public:
     }
 };
 
+
+class Solution {
+    
+    int res=0;
+
+public:
+
+
+    int minCameraCover(TreeNode* root)
+    {  
+    }
+
+    int dfs(TreeNode* node){
+    }
+};
+
+
 int main()
 {
-    BuildTree s;
+    Solution sl;
+
+    BuildTree bt;
 
     vector<int> arr = {10, 6, 15, 2, 8, 11, 18};
 
+    TreeNode* root= bt.buildBinTree(arr);
+
     clock_t time_start = clock();
-    TreeNode* root= s.buildBinTree(arr);
+
+    // sl.minCameraCover();
 
     cout << endl;
     clock_t time_end = clock();
+
+
     cout << "time use:" << 1000 * (time_end - time_start) / (double)CLOCKS_PER_SEC << "ms" << endl;
 
     // system("pause");
