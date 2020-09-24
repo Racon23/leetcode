@@ -42,8 +42,6 @@ public:
 
 
 class Solution {
-    
-    int res=0;
 
 public:
 
