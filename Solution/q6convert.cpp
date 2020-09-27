@@ -59,25 +59,3 @@ string Solution::convert(string s, int numRows)
     }
     return str;
 }
-
-// int main()
-// {
-//     Solution s;
-//     // string str = "LEETCODEISHIRING";
-//     // int numRows = 3;
-//     // int numRows = 4;
-//     // string str = "A";
-//     // int numRows = 1;
-//     string str = "ABCD";
-//     // int numRows = 1;
-//     int numRows = 2;
-
-//     clock_t time_start = clock();
-//     cout << s.convert(str, numRows);
-//     cout << endl;
-//     clock_t time_end = clock();
-//     cout << "time use:" << 1000 * (time_end - time_start) / (double)CLOCKS_PER_SEC << "ms" << endl;
-
-//     system("pause");
-//     return 0;
-// }

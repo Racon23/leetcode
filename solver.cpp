@@ -36,23 +36,24 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		string in2;
-		if (!mGetLine(f, in2))
-		{
-			break;
-		}
-		cout << in2 << endl;
+		// string in2;
+		// if (!mGetLine(f, in2))
+		// {
+		// 	break;
+		// }
+		// cout << in2 << endl;
 
-		string str1 = buildString(in1);
-		int n = parseInt(in2);
+		// string str1 = buildString(in1);
+		int n = parseInt(in1);
 
 		cout << "--result--" << endl;
 		time_start = clock();
 		// 执行操作
 
-		cout << solu.convert(str1, n);
+		cout << solu.reverse(n);
 
 		cout << endl;
+		// cout << INT_MAX << endl;
 		//结束
 		time_end = clock();
 		cout << "time use:" << 1000 * (time_end - time_start) / (double)CLOCKS_PER_SEC << "ms" << endl;

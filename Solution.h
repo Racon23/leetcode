@@ -21,6 +21,9 @@ public:
 
 	//#6 convert
 	string convert(string s, int numRows);
+
+	//#7 reverse
+	int reverse(int x);
 };
 
 #endif
