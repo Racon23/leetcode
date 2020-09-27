@@ -10,4 +10,6 @@ using namespace std;
 vector<int> buildVector(string in);
 
 void printVector(vector<int> vec);
+
+void printVector(vector<bool> vec);
 #endif

@@ -24,3 +24,18 @@ void printVector(vector<int> vec)
     }
     cout << ")" << endl;
 }
+
+
+void printVector(vector<bool> vec)
+{
+    cout << "(";
+    if(vec.size()==0){
+        return ;
+    }
+    cout << vec[0];
+    for (int i = 1; i < vec.size(); i++)
+    {
+        cout << "," << vec[i];
+    }
+    cout << ")" << endl;
+}

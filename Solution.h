@@ -46,6 +46,9 @@ public:
 	//#968 minCameraCover
 	int minCameraCover(TreeNode* root);
 	int minCameraCover2(TreeNode* root);
+
+	//#1431 kidsWithCandies
+	vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies);
 };
 
 #endif
