@@ -45,6 +45,7 @@ public:
 
 	//#968 minCameraCover
 	int minCameraCover(TreeNode* root);
+	int minCameraCover2(TreeNode* root);
 };
 
 #endif

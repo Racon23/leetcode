@@ -1,5 +1,6 @@
 #include "../Solution.h"
 
+// 贪心算法
 int res = 0;
 
 int dfs(TreeNode *node)
@@ -19,6 +20,7 @@ int dfs(TreeNode *node)
 int Solution::minCameraCover(TreeNode *root)
 {
     // 根节点的左右节点都是1 ，没有放监控头，root要自救
+    res = 0;
     if (dfs(root) == 0)
         res++;
     return res;
