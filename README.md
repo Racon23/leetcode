@@ -2,6 +2,10 @@
 
 ## LeetCode C++ debug enviroment
 
+### input example
+input.txt
+循环读取，如果空行就继续读下一行
+
 ### Solution
 
 Solution.h
@@ -48,3 +52,6 @@ LeetCode source code to solves the problems
 	auto ret = solver->method_name(args) ;
 	// output to check the answer. 
 ```
+
+## thanks
+> https://github.com/severinzhong/LeetCode
