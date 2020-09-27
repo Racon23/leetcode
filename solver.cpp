@@ -36,21 +36,23 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		// string in2;
-		// if (!mGetLine(f, in2))
-		// {
-		// 	break;
-		// }
-		// cout << in2 << endl;
+		string in2;
+		if (!mGetLine(f, in2))
+		{
+			break;
+		}
+		cout << in2 << endl;
 
+		string str1 = buildString(in1);
+		int n = parseInt(in2);
+
+		cout << "--result--" << endl;
 		time_start = clock();
 		// 执行操作
-		string str1 = buildString(in1);
 
-		cout<<"--result--"<<endl;
-		cout<<solu.longestPalindrome(str1);
+		cout << solu.convert(str1, n);
 
-		cout<<endl;
+		cout << endl;
 		//结束
 		time_end = clock();
 		cout << "time use:" << 1000 * (time_end - time_start) / (double)CLOCKS_PER_SEC << "ms" << endl;

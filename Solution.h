@@ -18,6 +18,9 @@ public:
 
 	//#5 longestPalindrome
 	string longestPalindrome(string s);
+
+	//#6 convert
+	string convert(string s, int numRows);
 };
 
 #endif
