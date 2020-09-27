@@ -42,6 +42,9 @@ public:
 
 	//#617 mergeTrees
 	TreeNode *mergeTrees(TreeNode *t1, TreeNode *t2);
+
+	//#968 minCameraCover
+	int minCameraCover(TreeNode* root);
 };
 
 #endif
