@@ -36,6 +36,9 @@ public:
 
 	//#226 invertTree
 	TreeNode *invertTree(TreeNode *root);
+
+	//#538 convertBST
+	TreeNode* convertBST(TreeNode* root);
 };
 
 #endif

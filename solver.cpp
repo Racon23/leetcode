@@ -52,7 +52,7 @@ int main()
 		// Ö´ÐÐ²Ù×÷
 
 		// cout << solu.invertTree(root);
-		printTree2(solu.invertTree(root));
+		printTree2(solu.convertBST(root));
 
 		cout << endl;
 		// cout << INT_MAX << endl;
