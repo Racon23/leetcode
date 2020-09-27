@@ -52,6 +52,9 @@ public:
 
 	//1470 shuffle
 	vector<int> shuffle(vector<int>& nums, int n);
+
+	//1480 runningSum
+    vector<int> runningSum(vector<int>& nums);
 };
 
 #endif

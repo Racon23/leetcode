@@ -36,15 +36,15 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		string in2;
-		if (!mGetLine(f, in2))
-		{
-			break;
-		}
-		cout << in2 << endl;
+		// string in2;
+		// if (!mGetLine(f, in2))
+		// {
+		// 	break;
+		// }
+		// cout << in2 << endl;
 
 		// string str1 = buildString(in1);
-		int n = parseInt(in2);
+		// int n = parseInt(in2);
 		// TreeNode *root = buildTree2(in1);
 		// TreeNode *root2 = buildTree2(in2);
 		vector<int> vec1 = buildVector(in1);
@@ -55,7 +55,7 @@ int main()
 
 		// cout << solu.minCameraCover(root);
 		// printTree2(solu.minCameraCover(root));
-		printVector(solu.shuffle(vec1, n));
+		printVector(solu.runningSum(vec1));
 
 		cout << endl;
 		// cout << INT_MAX << endl;
