@@ -5,10 +5,11 @@ int count = 0;
 int maxcount = 0;
 vector<int> arr;
 
+// 寻找左子树的最右节点
 TreeNode *getSuccessorF(TreeNode *node)
 {
     TreeNode *succ = node->left;
-    if (succ->right != nullptr && succ->right != node)
+    while (succ->right != nullptr && succ->right != node)
     {
         succ = succ->right;
     }
@@ -17,6 +18,7 @@ TreeNode *getSuccessorF(TreeNode *node)
 
 void exeNode(TreeNode *root)
 {
+    cout << root->val << " ";
     if (root->val == base)
     {
         count++;
@@ -35,6 +37,10 @@ void exeNode(TreeNode *root)
     {
         base = root->val;
         count = 1;
+        if (maxcount <= count)
+        {
+            arr.push_back(root->val);
+        }
     }
 }
 
@@ -69,6 +75,7 @@ void morisSearchF(TreeNode *root)
             }
         }
     }
+    cout << endl;
     // return node;
 }
 
@@ -77,6 +84,7 @@ vector<int> Solution::findMode(TreeNode *root)
     base = 0;
     count = 0;
     maxcount = 0;
+    arr.clear();
     morisSearchF(root);
     return arr;
 }

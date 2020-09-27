@@ -2,9 +2,13 @@
 
 ## LeetCode C++ debug enviroment
 
+### environment
+vs code + mingw64
+
 ### input example
 input.txt
 循环读取，如果空行就继续读下一行
+格式参考leetcode
 
 ### Solution
 

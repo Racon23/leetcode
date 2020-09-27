@@ -48,6 +48,7 @@ int main()
 		TreeNode *root = buildTree2(in1);
 		// TreeNode *root2 = buildTree2(in2);
 		// vector<int> vec1 = buildVector(in1);
+		printTree2(root);
 
 		cout << "--result--" << endl;
 		time_start = clock();
