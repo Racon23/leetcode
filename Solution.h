@@ -30,6 +30,9 @@ public:
 
 	//#9 isPalindrome
 	bool isPalindrome(int x);
+
+	//#10 isMatch
+	bool isMatch(string s, string p)
 };
 
 #endif
