@@ -36,23 +36,24 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		// string in2;
-		// if (!mGetLine(f, in2))
-		// {
-		// 	break;
-		// }
-		// cout << in2 << endl;
+		string in2;
+		if (!mGetLine(f, in2))
+		{
+			break;
+		}
+		cout << in2 << endl;
 
 		// string str1 = buildString(in1);
 		// int n = parseInt(in1);
 		TreeNode *root = buildTree2(in1);
+		TreeNode *root2 = buildTree2(in2);
 
 		cout << "--result--" << endl;
 		time_start = clock();
 		// 执行操作
 
 		// cout << solu.invertTree(root);
-		printTree2(solu.convertBST(root));
+		printTree2(solu.mergeTrees(root,root2));
 
 		cout << endl;
 		// cout << INT_MAX << endl;

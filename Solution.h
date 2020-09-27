@@ -39,6 +39,9 @@ public:
 
 	//#538 convertBST
 	TreeNode* convertBST(TreeNode* root);
+
+	//#617 mergeTrees
+	TreeNode *mergeTrees(TreeNode *t1, TreeNode *t2);
 };
 
 #endif
