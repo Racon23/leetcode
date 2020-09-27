@@ -24,6 +24,9 @@ public:
 
 	//#7 reverse
 	int reverse(int x);
+
+	//#8 myAtoi
+	int myAtoi(string str);
 };
 
 #endif

@@ -43,14 +43,14 @@ int main()
 		// }
 		// cout << in2 << endl;
 
-		// string str1 = buildString(in1);
-		int n = parseInt(in1);
+		string str1 = buildString(in1);
+		// int n = parseInt(in1);
 
 		cout << "--result--" << endl;
 		time_start = clock();
 		// Ö´ĞĞ²Ù×÷
 
-		cout << solu.reverse(n);
+		cout << solu.myAtoi(str1);
 
 		cout << endl;
 		// cout << INT_MAX << endl;
