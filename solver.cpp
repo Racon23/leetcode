@@ -55,7 +55,7 @@ int main()
 
 		// cout << solu.minCameraCover(root);
 		// printTree2(solu.minCameraCover(root));
-		printVector(solu.kidsWithCandies(vec1, n));
+		printVector(solu.shuffle(vec1, n));
 
 		cout << endl;
 		// cout << INT_MAX << endl;

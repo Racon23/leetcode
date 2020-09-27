@@ -49,6 +49,9 @@ public:
 
 	//#1431 kidsWithCandies
 	vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies);
+
+	//1470 shuffle
+	vector<int> shuffle(vector<int>& nums, int n);
 };
 
 #endif
