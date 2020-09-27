@@ -36,26 +36,26 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		string in2;
-		if (!mGetLine(f, in2))
-		{
-			break;
-		}
-		cout << in2 << endl;
-		// 读取第三行
-		string in3;
-		if (!mGetLine(f, in3))
-		{
-			break;
-		}
-		cout << in3 << endl;
+		// string in2;
+		// if (!mGetLine(f, in2))
+		// {
+		// 	break;
+		// }
+		// cout << in2 << endl;
+		// // 读取第三行
+		// string in3;
+		// if (!mGetLine(f, in3))
+		// {
+		// 	break;
+		// }
+		// cout << in3 << endl;
 
 		// string str1 = buildString(in1);
 		// int n = parseInt(in2);
-		TreeNode *root = buildTree2(in1);
-		TreeNode *p = buildTreeNode(in2);
-		TreeNode *q = buildTreeNode(in3);
-		// vector<int> vec1 = buildVector(in1);
+		// TreeNode *root = buildTree2(in1);
+		// TreeNode *p = buildTreeNode(in2);
+		// TreeNode *q = buildTreeNode(in3);
+		vector<int> vec1 = buildVector(in1);
 		// printTree2(root);
 
 		cout << "--result--" << endl;
@@ -67,7 +67,7 @@ int main()
 		// printVector(solu.findMode(root));
 		// cout << solu.isMatch(buildString(in1), buildString(in2));
 		// printTree2(solu.lowestCommonAncestor(root, p, q));
-		cout<<solu.lowestCommonAncestor(root, p, q)->val;
+		cout << solu.maxArea(vec1);
 
 		cout << endl;
 		// cout << INT_MAX << endl;

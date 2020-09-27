@@ -34,6 +34,9 @@ public:
 	//#10 isMatch
 	bool isMatch(string s, string p);
 
+	//#11 盛最多水的容器
+	int maxArea(vector<int> &height);
+
 	//#226 invertTree
 	TreeNode *invertTree(TreeNode *root);
 
