@@ -66,7 +66,8 @@ int main()
 		// printTree2(solu.minCameraCover(root));
 		// printVector(solu.findMode(root));
 		// cout << solu.isMatch(buildString(in1), buildString(in2));
-		printTree2(solu.lowestCommonAncestor(root, p, q));
+		// printTree2(solu.lowestCommonAncestor(root, p, q));
+		cout<<solu.lowestCommonAncestor(root, p, q)->val;
 
 		cout << endl;
 		// cout << INT_MAX << endl;
