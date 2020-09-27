@@ -32,7 +32,10 @@ public:
 	bool isPalindrome(int x);
 
 	//#10 isMatch
-	bool isMatch(string s, string p)
+	bool isMatch(string s, string p);
+
+	//#226 invertTree
+	TreeNode *invertTree(TreeNode *root);
 };
 
 #endif

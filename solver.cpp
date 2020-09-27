@@ -44,13 +44,15 @@ int main()
 		// cout << in2 << endl;
 
 		// string str1 = buildString(in1);
-		int n = parseInt(in1);
+		// int n = parseInt(in1);
+		TreeNode *root = buildTree2(in1);
 
 		cout << "--result--" << endl;
 		time_start = clock();
 		// Ö´ĞĞ²Ù×÷
 
-		cout << solu.isPalindrome(n);
+		// cout << solu.invertTree(root);
+		printTree2(solu.invertTree(root));
 
 		cout << endl;
 		// cout << INT_MAX << endl;
