@@ -45,17 +45,17 @@ int main()
 
 		// string str1 = buildString(in1);
 		// int n = parseInt(in2);
-		// TreeNode *root = buildTree2(in1);
+		TreeNode *root = buildTree2(in1);
 		// TreeNode *root2 = buildTree2(in2);
-		vector<int> vec1 = buildVector(in1);
+		// vector<int> vec1 = buildVector(in1);
 
 		cout << "--result--" << endl;
 		time_start = clock();
 		// Ö´ÐÐ²Ù×÷
 
-		cout << solu.numIdenticalPairs(vec1);
+		// cout << solu.numIdenticalPairs(vec1);
 		// printTree2(solu.minCameraCover(root));
-		// printVector(solu.runningSum(vec1));
+		printVector(solu.findMode(root));
 
 		cout << endl;
 		// cout << INT_MAX << endl;

@@ -58,6 +58,9 @@ public:
 
 	//#1512 numIdenticalPairs
 	int numIdenticalPairs(vector<int>& nums);
+
+	//#501 findMode
+	vector<int> findMode(TreeNode *root);
 };
 
 #endif
