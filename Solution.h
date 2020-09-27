@@ -61,6 +61,9 @@ public:
 
 	//#501 findMode
 	vector<int> findMode(TreeNode *root);
+
+	//#235 二叉搜索树的最近公共祖先
+	TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q);
 };
 
 #endif

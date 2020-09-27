@@ -72,6 +72,11 @@ TreeNode *buildTree2(std::string in)
 	return root;
 }
 
+TreeNode *buildTreeNode(std::string in)
+{
+	return new TreeNode(parseInt(in));
+}
+
 // Ç°Ðò±éÀú
 void printTree(TreeNode *root)
 {

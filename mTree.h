@@ -20,6 +20,9 @@ TreeNode* buildTree(std::vector<std::string> values, int idx);
 
 TreeNode* buildTree2(std::string in);
 
+TreeNode* buildTreeNode(std::string in);
+
+
 void printTree(TreeNode* root);
 
 // 广度优先遍历
