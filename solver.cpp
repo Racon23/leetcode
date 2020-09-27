@@ -53,9 +53,9 @@ int main()
 		time_start = clock();
 		// Ö´ÐÐ²Ù×÷
 
-		// cout << solu.minCameraCover(root);
+		cout << solu.numIdenticalPairs(vec1);
 		// printTree2(solu.minCameraCover(root));
-		printVector(solu.runningSum(vec1));
+		// printVector(solu.runningSum(vec1));
 
 		cout << endl;
 		// cout << INT_MAX << endl;
