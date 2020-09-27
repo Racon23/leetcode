@@ -27,6 +27,9 @@ public:
 
 	//#8 myAtoi
 	int myAtoi(string str);
+
+	//#9 isPalindrome
+	bool isPalindrome(int x);
 };
 
 #endif
