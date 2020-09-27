@@ -7,6 +7,7 @@
 #include "mTree.h"
 #include "mList.h"
 #include "mVector.h"
+#include "mString.h"
 #include "Solution.h"
 using namespace std;
 
@@ -35,18 +36,19 @@ int main()
 	{
 		cout << in1 << endl;
 		// 读取第二行
-		string in2;
-		if (!mGetLine(f, in2))
-		{
-			break;
-		}
-		cout << in2 << endl;
+		// string in2;
+		// if (!mGetLine(f, in2))
+		// {
+		// 	break;
+		// }
+		// cout << in2 << endl;
 
 		time_start = clock();
 		// 执行操作
-		vector<int> vec1 = buildVector(in1);
-		vector<int> vec2 = buildVector(in2);
-		cout<<solu.findMedianSortedArrays(vec1,vec2);
+		string str1 = buildString(in1);
+
+		cout<<"--result--"<<endl;
+		cout<<solu.longestPalindrome(str1);
 
 		cout<<endl;
 		//结束

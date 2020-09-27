@@ -53,5 +53,5 @@ LeetCode source code to solves the problems
 	// output to check the answer. 
 ```
 
-## thanks
+# thanks
 > https://github.com/severinzhong/LeetCode

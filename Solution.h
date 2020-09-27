@@ -15,6 +15,9 @@ class Solution
 public:
 	//#4 findMedianSortedArrays
 	double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2);
+
+	//#5 longestPalindrome
+	string longestPalindrome(string s);
 };
 
 #endif
