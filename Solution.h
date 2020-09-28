@@ -6,6 +6,7 @@
 #include "utils.h"
 #include "mTree.h"
 #include "mList.h"
+#include "mNode.h"
 
 using namespace std;
 
@@ -67,6 +68,9 @@ public:
 
 	//#235 二叉搜索树的最近公共祖先
 	TreeNode *lowestCommonAncestor(TreeNode *root, TreeNode *p, TreeNode *q);
+
+	//# 117. 填充每个节点的下一个右侧节点指针 II
+	Node* connect(Node* root);
 };
 
 #endif
