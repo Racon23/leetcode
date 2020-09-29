@@ -55,7 +55,7 @@ int main()
 		// TreeNode *root = buildTree2(in1);
 		// TreeNode *p = buildTreeNode(in2);
 		// TreeNode *q = buildTreeNode(in3);
-		vector<int> vec1 = buildVector(in1);
+		// vector<int> vec1 = buildVector(in1);
 		// printTree2(root);
 
 		cout << "--result--" << endl;
@@ -67,7 +67,9 @@ int main()
 		// printVector(solu.findMode(root));
 		// cout << solu.isMatch(buildString(in1), buildString(in2));
 		// printTree2(solu.lowestCommonAncestor(root, p, q));
-		cout << solu.maxArea(vec1);
+		// cout << solu.maxArea(vec1);
+
+		printNode(buildNode(in1));
 
 		cout << endl;
 		// cout << INT_MAX << endl;
