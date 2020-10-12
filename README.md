@@ -1,3 +1,7 @@
+# PLEASE JUST USE VSCODE EXTENSION
+
+https://github.com/wangtao0101/vscode-debug-leetcode
+
 # LeetCode
 
 ## LeetCode C++ debug enviroment
